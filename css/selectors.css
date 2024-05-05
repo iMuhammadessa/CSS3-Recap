@@ -1,0 +1,18 @@
+body {
+  background-color: bisque;
+  font-family: "Exo 2", sans-serif;
+}
+
+.articles {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+h3 {
+  color: rgb(24, 137, 141);
+}
+
+h3,
+p {
+  font-weight: 500;
+}
