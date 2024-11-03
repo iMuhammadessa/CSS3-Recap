@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/services.css" />
+    <title>Services</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+          <img src="./images/image-1.jpg" alt="" />
+        </div>
+        <div class="col-2">
+          <img src="./images/image-2.jpg" alt="" />
+        </div>
+        <div class="col-3">
+          <img src="./images/image-3.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const images = document.querySelectorAll("img");
+      images.forEach((image) => {
+        image.addEventListener("click", () => {
+          image.style.opacity = "0";
+
+          image.addEventListener(
+            "transitionend",
+            () => {
+              image.style.display = "none";
+            },
+            { once: true }
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
